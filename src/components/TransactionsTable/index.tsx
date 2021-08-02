@@ -23,7 +23,7 @@ export function TransactionsTable(){
             {
                 transactions.map(transaction => {
                     return (
-                        <tr>
+                        <tr key={transaction.id}>
                             <td>
                                {transaction.title}
                             </td>
